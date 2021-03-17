@@ -20,5 +20,6 @@ from . import routes
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', routes.index, name='route')
+    path('', routes.index, name='route'),
+    path('create/', routes.createItem, name='create-item')
 ]
